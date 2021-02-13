@@ -48,7 +48,11 @@
   Heller, et.al. (2006) ``Cluster-based analysis of FMRI data'',
   NeuroImage, 33(2), 599-608.
 
-  \url{http://maitra.public.iastate.edu/}
+  Chen, W.-C. and Maitra, R. (2021)
+  \dQuote{A Practical Model-based Segmentation Approach for Accurate
+	  Activation Detection in Single-Subject functional Magnetic
+	  Resonance Imaging Studies},
+  \emph{arXiv:2102.03639}.
 }
 \author{
   Wei-Chen Chen.
@@ -80,6 +84,8 @@ id.class.logit <- suppressWarnings(cba.cor(da.ts, fun.sim = fun.logit))
 table(id.class.logit)
 
 \donttest{
+.rem <- function(){
+
   ### Real data
   library(AnalyzeFMRI, quietly = TRUE)
   library(oro.nifti, quietly = TRUE)
@@ -95,6 +101,8 @@ table(id.class.logit)
   id.class <- suppressWarnings(cba.cor(da.ts, da.m))
   dim(id.class) <- dim(da.m)
   length(table(id.class))
+
+}
 }
 }
 \keyword{programming}

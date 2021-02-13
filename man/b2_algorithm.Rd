@@ -26,7 +26,11 @@
   Return an optimized \code{PARAM}.
 }
 \references{
-  \url{http://maitra.public.iastate.edu/}
+  Chen, W.-C. and Maitra, R. (2021)
+  \dQuote{A Practical Model-based Segmentation Approach for Accurate
+	  Activation Detection in Single-Subject functional Magnetic
+	  Resonance Imaging Studies},
+  \emph{arXiv:2102.03639}.
 }
 \author{
   Wei-Chen Chen and Ranjan Maitra.
@@ -55,6 +59,8 @@ print(PARAM.toy1$ETA)
 RRand(toy1$CLASS.gbd, id.toy1)
 
 \donttest{
+.rem <- function(){
+
   ### Test toy2.
   set.seed(1234)
   X.gbd <- toy2$X.gbd
@@ -65,6 +71,8 @@ RRand(toy1$CLASS.gbd, id.toy1)
   id.toy2 <- .MixfMRIEnv$CLASS.gbd
   print(PARAM.toy2$ETA)
   RRand(toy2$CLASS.gbd, id.toy2)
+
+}
 }
 }
 \keyword{programming}

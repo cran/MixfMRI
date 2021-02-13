@@ -5,11 +5,12 @@
   Generate datasets for MixfMRI simulations
 }
 \usage{
-  gendataset(phantom, overlap)
+  gendataset(phantom, overlap, smooth = FALSE)
 }
 \arguments{
   \item{phantom}{a phantom dataset.}
   \item{overlap}{a desired overlap level.}
+  \item{smooth}{if \code{gcv.smooth2d()} be applied to the data.}
 }
 \details{
   This is a function to generate simulated fMRI data based on the input
@@ -23,7 +24,11 @@
   of interesting in simulations.
 }
 \references{
-  \url{http://maitra.public.iastate.edu/}
+  Chen, W.-C. and Maitra, R. (2021)
+  \dQuote{A Practical Model-based Segmentation Approach for Accurate
+	  Activation Detection in Single-Subject functional Magnetic
+	  Resonance Imaging Studies},
+  \emph{arXiv:2102.03639}.
 }
 \author{
   Wei-Chen Chen and Ranjan Maitra.
@@ -33,6 +38,8 @@
 }
 \examples{
 \donttest{
+.rem <- function(){
+
   library(MixfMRI, quietly = TRUE)
   set.seed(1234)
   da <- gendataset(phantom = shepp1fMRI, overlap = 0.01)$pval
@@ -43,6 +50,8 @@
   image(shepp2fMRI[50:210, 50:210], axes = FALSE)
   image(da[50:210, 50:210], axes = FALSE)
   image(da2[50:210, 50:210], axes = FALSE)
+
+}
 }
 }
 \keyword{programming}

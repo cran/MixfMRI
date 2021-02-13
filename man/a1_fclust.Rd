@@ -113,7 +113,11 @@
   \item{model.X}{carried from input.}
 }
 \references{
-  \url{http://maitra.public.iastate.edu/}
+  Chen, W.-C. and Maitra, R. (2021)
+  \dQuote{A Practical Model-based Segmentation Approach for Accurate
+	  Activation Detection in Single-Subject functional Magnetic
+	  Resonance Imaging Studies},
+  \emph{arXiv:2102.03639}.
 }
 \author{
   Wei-Chen Chen and Ranjan Maitra.
@@ -139,6 +143,8 @@ id.toy1 <- .MixfMRIEnv$CLASS.gbd
 print(RRand(toy1$CLASS.gbd, id.toy1))
 
 \donttest{
+.rem <- function(){
+
   ### Test toy2.
   X.gbd <- toy2$X.gbd[, -3]
   PV.gbd <- toy2$PV.gbd
@@ -146,6 +152,8 @@ print(RRand(toy1$CLASS.gbd, id.toy1))
   print(PARAM)
   id.toy2 <- .MixfMRIEnv$CLASS.gbd
   print(RRand(toy2$CLASS.gbd, id.toy2))
+
+}
 }
 }
 \keyword{programming}

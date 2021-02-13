@@ -51,7 +51,11 @@
   also contains testing statistics and p-values.
 }
 \references{
-  \url{http://maitra.public.iastate.edu/}
+  Chen, W.-C. and Maitra, R. (2021)
+  \dQuote{A Practical Model-based Segmentation Approach for Accurate
+	  Activation Detection in Single-Subject functional Magnetic
+	  Resonance Imaging Studies},
+  \emph{arXiv:2102.03639}.
 }
 \author{
   Wei-Chen Chen and Ranjan Maitra.
@@ -76,8 +80,12 @@ ret <- fclust(X.gbd, PV.gbd, K = 2, min.1st.prop = 0.95)
 ret.lrt <- lrt(PV.gbd, ret$class, K = 2)
 print(ret.lrt)
 \donttest{
+.rem <- function(){
+
   ret.lrt2 <- lrt2(PV.gbd, ret$class, K = 3)
   print(ret.lrt2)
+
+}
 }
 }
 \keyword{programming}

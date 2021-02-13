@@ -42,7 +42,11 @@
   A list of class \code{lmt.I} are returned.
 }
 \references{
-  \url{http://maitra.public.iastate.edu/}
+  Chen, W.-C. and Maitra, R. (2021)
+  \dQuote{A Practical Model-based Segmentation Approach for Accurate
+	  Activation Detection in Single-Subject functional Magnetic
+	  Resonance Imaging Studies},
+  \emph{arXiv:2102.03639}.
 }
 \author{
   Wei-Chen Chen and Ranjan Maitra.
@@ -58,6 +62,8 @@ library(EMCluster, quietly = TRUE)
 .FC.CT$CONTROL$debug <- 0
   
 \donttest{
+.rem <- function(){
+
   ### Fit toy1.
   set.seed(1234)
   X.gbd <- toy1$X.gbd
@@ -88,6 +94,8 @@ library(EMCluster, quietly = TRUE)
   (lmt.pv.34 <- lmt.pv(ret.3, ret.4, X.gbd, PV.gbd))
   (lmt.pv.35 <- lmt.pv(ret.3, ret.5, X.gbd, PV.gbd))
   (lmt.pv.45 <- lmt.pv(ret.4, ret.5, X.gbd, PV.gbd))
+
+}
 }
 }
 \keyword{programming}
