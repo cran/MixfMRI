@@ -1,6 +1,6 @@
 e879eaad64aab8e1f8e63e298f5cea28 *COPYING
-17d124371b20ea873cf940f883d00bd1 *ChangeLog
-9a48b5227fdbd8d323ce5e2ba80181fa *DESCRIPTION
+0b288979e10033c60d076b42f2b21902 *ChangeLog
+c7fd5a5b9652b844e6f483aad91962e0 *DESCRIPTION
 6201147382d8ce2e2c70c5d3e56e916b *INSTALL
 08913df7b89dcd2ef5e17f577c326caa *NAMESPACE
 ef83bcbadcba2894094c0832fba999c9 *R/000_globalVariables.r
@@ -56,9 +56,9 @@ db71230848429b9f53e6984ffebbad22 *R/utility.r
 cf0410a746dab6f9df5fb9fdf221539a *R/workflow.r
 a586281cf874ca953921e502c3e58410 *R/zzz.r
 5e511135670828c2ce7fbf49fc40f5e2 *README.md
-fbf3d37378d22f395df60eb029ab3f15 *cleanup
-42abd46b04494f345439296ce7a4c43a *configure
-e521800733dda0df9a230f12b88a142f *configure.ac
+993c8f5f04300ac9b99fd4de7f2f58c3 *cleanup
+29c933056ca12f22eedc2bb3f88d87bb *configure
+487e040f906ff45a886fa6cd8d73f3b9 *configure.ac
 d41d8cd98f00b204e9800998ecf8427e *configure.win
 e6e1aad80238ec4b38fd9642313a4ac3 *data/2dphant.rda
 b8badc8947b27c023bb9fd5fa1cc789e *data/control.r
@@ -179,6 +179,7 @@ e3ab2b77b0237f637609c34efff5107a *man/u1_summarized.overlap.Rd
 318b7292f3e3f6c71b749a495365a598 *man/u3_fdr_ss.Rd
 d5a93dcf10c4d5efce84e33527d75b1c *man/u4_cba_cor.Rd
 e510014bd766b76cb4c63b2a440c8304 *man/zz_internal.Rd
+3952f204ed4d42517c6a5ddd911570d7 *src/Makevars.in
 3952f204ed4d42517c6a5ddd911570d7 *src/Makevars.win
 397b7db752baac25b99fe520424c44da *src/my_c_apecm.c
 af1f907c7f08e7f6678b6758c54e81e1 *src/my_c_em.c
