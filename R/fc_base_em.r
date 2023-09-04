@@ -82,14 +82,14 @@ m.step.gbd <- function(PARAM){
 
 ### log likelihood.
 logL.step.gbd <- function(){
-  sum.gbd(.MixfMRIEnv$W.gbd.rowSums)
+  sum_gbd(.MixfMRIEnv$W.gbd.rowSums)
 } # End of logL.step.gbd().
 
 ### entropy.
 entropy.step.gbd <- function(){
   tmp.gbd <- .MixfMRIEnv$Z.gbd * log(.MixfMRIEnv$Z.gbd)
   tmp.gbd[! is.finite(tmp.gbd)] <- 0
-  -sum.gbd(tmp.gbd)
+  -sum_gbd(tmp.gbd)
 } # End of entropy.step.gbd().
 
 
@@ -146,8 +146,8 @@ em.step.gbd <- function(PARAM.org){
       time.start <- proc.time()
     }
 
-    PARAM.new <- try(em.onestep.gbd(PARAM.org))
-    if(.MixfMRIEnv$any(class(PARAM.new) == "try-error")){
+    PARAM.new <- try(em.onestep.gbd(PARAM.org), silent = TRUE)
+    if(.MixfMRIEnv$any(inherits(PARAM.new, "try-error"))){
       .MixfMRIEnv$cat("Results of previous iterations are returned.\n",
                         quiet = TRUE)
       .MixfMRIEnv$CHECK$convergence <- 99
@@ -167,7 +167,7 @@ em.step.gbd <- function(PARAM.org){
 
       .MixfMRIEnv$SAVE.param <- c(.MixfMRIEnv$SAVE.param, PARAM.new)
       CLASS.iter.new <- unlist(apply(.MixfMRIEnv$Z.gbd, 1, which.max))
-      tmp <- sum.gbd(CLASS.iter.new != .MixfMRIEnv$CLASS.iter.org)
+      tmp <- sum_gbd(CLASS.iter.new != .MixfMRIEnv$CLASS.iter.org)
 
       tmp.all <- c(tmp / PARAM.new$N, PARAM.new$logL,
                    PARAM.new$logL - PARAM.org$logL,

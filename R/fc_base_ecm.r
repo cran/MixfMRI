@@ -65,8 +65,8 @@ ecm.step.gbd <- function(PARAM.org){
       time.start <- proc.time()
     }
 
-    PARAM.new <- try(ecm.onestep.gbd(PARAM.org))
-    if(.MixfMRIEnv$any(class(PARAM.new) == "try-error")){
+    PARAM.new <- try(ecm.onestep.gbd(PARAM.org), silent = TRUE)
+    if(.MixfMRIEnv$any(inherits(PARAM.new, "try-error"))){
       .MixfMRIEnv$cat("Results of previous iterations are returned.\n",
                         quiet = TRUE)
       .MixfMRIEnv$CHECK$convergence <- 99
@@ -86,7 +86,7 @@ ecm.step.gbd <- function(PARAM.org){
 
       .MixfMRIEnv$SAVE.param <- c(.MixfMRIEnv$SAVE.param, PARAM.new)
       CLASS.iter.new <- unlist(apply(.MixfMRIEnv$Z.gbd, 1, which.max))
-      tmp <- sum.gbd(CLASS.iter.new != .MixfMRIEnv$CLASS.iter.org)
+      tmp <- sum_gbd(CLASS.iter.new != .MixfMRIEnv$CLASS.iter.org)
 
       tmp.all <- c(tmp / PARAM.new$N, PARAM.new$logL,
                    PARAM.new$logL - PARAM.org$logL,

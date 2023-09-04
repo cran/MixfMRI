@@ -2,7 +2,8 @@ useDynLib(MixfMRI)
 
 importFrom("stats", "rmultinom", "rbeta", "dbeta", "dnorm", "qnorm", "optim",
                     "runif", "rnorm", "pnorm", "rbinom", "constrOptim",
-                    "pchisq", "rexp", "var", "cor", "median", "optimize")
+                    "pchisq", "rexp", "var", "cor", "median", "optimize",
+                    "pf", "pt", "qf", "qt")
 importFrom("grDevices", "colorRampPalette")
 importFrom("graphics", "axis", "image")
 importFrom("MASS", "ginv", "mvrnorm")
@@ -51,7 +52,12 @@ export(
   "cba.cor.3d",
   "gcv.smooth2d",
   "fdr.bh.p1",
-  "fdr.bh.p2"
+  "fdr.bh.p2",
+  "Threshold.Bonferroni",
+  "Threshold.RF",
+  "EC.3D",
+  "Threshold.FDR",
+  "cluster.threshold"
 )
 
 S3method(print, fclust)

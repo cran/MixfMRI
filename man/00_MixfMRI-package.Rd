@@ -13,13 +13,6 @@
   Workflows are also implemented utilizing high performance techniques.
 }
 \details{
-\tabular{ll}{
-  Package: \tab MixfMRI\cr
-  Type: \tab Package\cr
-  License: \tab GPL (>= 2)\cr
-  LazyLoad: \tab yes\cr
-}
-
   The main function of this package is \code{\link{fclust}()} that implements
   model-based clustering algorithm for fMRI signal data and provides
   unsupervised clustering results for the data. Several workflows implemented
@@ -27,11 +20,11 @@
   process clustering, hypothesis, cluster merging, and visualizations.
 }
 \references{
-  Chen, W.-C. and Maitra, R. (2021)
-  \dQuote{A Practical Model-based Segmentation Approach for Accurate
-	  Activation Detection in Single-Subject functional Magnetic
-	  Resonance Imaging Studies},
-  \emph{arXiv:2102.03639}.
+  Chen, W.-C. and Maitra, R. (2023)
+  \dQuote{A practical model-based segmentation approach for improved
+          activation detection in single-subject functional magnetic
+          resonance imaging studies},
+  \emph{doi:10.1002/hbm.26425}.
 }
 \author{
   Wei-Chen Chen and Ranjan Maitra.
