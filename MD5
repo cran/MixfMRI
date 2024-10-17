@@ -1,6 +1,6 @@
 e879eaad64aab8e1f8e63e298f5cea28 *COPYING
-1b74e821c7da381d12e12b5f91068c21 *ChangeLog
-9902667463cbed89aa526f01d2a079e7 *DESCRIPTION
+1a02bff344dcfda9e83d0dcab368c98e *ChangeLog
+ce1755b3584f3fbecae16825c0a74c10 *DESCRIPTION
 3cbde14bee107af036c65cb0b4ccc174 *INSTALL
 fb90b92a8d85e836850f3d48425c2fee *NAMESPACE
 ef83bcbadcba2894094c0832fba999c9 *R/000_globalVariables.r
@@ -52,7 +52,7 @@ a8bb1c6dd38b364c92c659116c444c15 *R/maitra_smooth2d.r
 ecd182d79687f6342c95702c15b143ec *R/post_I_information.r
 75b9900a833c93b54eba71c33b0752b6 *R/qvalue.r
 1999bb3df9f65616861dd2f16cf45428 *R/summarized.overlap.r
-954a1f7d5dc28d7f4369bd61992f63b4 *R/utility.r
+0bae3a567441f2d2709ad5f6062d7df3 *R/utility.r
 cf0410a746dab6f9df5fb9fdf221539a *R/workflow.r
 be2db12e78a29814b2be229ecc84bc50 *R/yy_AnalyzeFMRI_spatial.mixture.r
 47f44ccb6323c537aaf950be9f3fdf1e *R/yy_AnalyzeFMRI_threshold.r
@@ -93,7 +93,7 @@ fef888b8247e1dff6eff9507ef66cf59 *demo/pval_2d_complex.r
 99d55a674adc36b0fac17fcc2d95cc73 *demo/test_noX.r
 60c7e8ed65a0c2b59f7381df0e14bd09 *demo/test_pstats.r
 ae63f6e2ba0e681c08967b4a1f54e0cc *demo/test_toy.r
-7f7212f1a9750b0116f20ae5d058565c *inst/CITATION
+641363525e8726068f588d4e6b338af5 *inst/CITATION
 a11cac0c29c988e422bc9cf4e0b3194f *inst/doc/MixfMRI-guide.Rnw
 d220e79d105b9a4a453574e662312fb2 *inst/doc/MixfMRI-guide.pdf
 99797d5e8f759505f1a95e2be24c46ae *inst/workflow/simulation/create_simu.txt
@@ -161,7 +161,7 @@ e898e30559c8ba5ceebfbb1dfc993410 *inst/workflow/spmd/3d_common/33-spmd_merge_lrt
 883e4f263f26e2c691ebff93bc2dc006 *inst/workflow/spmd/3d_noX/run.sh
 adcabab94ea34778e66055eb518aa4e8 *inst/workflow/timing/02-spmd_fclust.r
 ebaa694f1c334db1d726c0e71e74ed02 *inst/workflow/timing/run.sh
-c46f981d3a013ec34ec724c231f66cbd *man/00_MixfMRI-package.Rd
+2d2f90f7f8cdc7d84a3cdf414e18a751 *man/00_MixfMRI-package.Rd
 648dd05ce68c2a7e3c53252f827ebf38 *man/11_d_control.Rd
 35c91ffcbf730108c57b6d648c61bea0 *man/22_d_data.Rd
 f3569b055ad8da6ca916f04f16031308 *man/a1_fclust.Rd
@@ -180,7 +180,7 @@ cb70b1d04b8192eaa43e4f39c740dff6 *man/f2_logit_ETA.Rd
 e3ab2b77b0237f637609c34efff5107a *man/u1_summarized.overlap.Rd
 2663f94168524c393d2fde41b333bdd2 *man/u2_qvalue.Rd
 318b7292f3e3f6c71b749a495365a598 *man/u3_fdr_ss.Rd
-bc5f6a43a975a7ce893adb7385471b75 *man/u4_cba_cor.Rd
+28c5c09119678463b3286ac8ebd40fef *man/u4_cba_cor.Rd
 107a5ef16b469796464a477141ae8717 *man/y1_Threshold.Bonferroni.Rd
 03eada27f99e83eed48af77ca642616e *man/y2_Threshold.RF.Rd
 871ec7b46b286f16734b0f17e34f9869 *man/y3_EC.3D.Rd
@@ -191,7 +191,7 @@ e510014bd766b76cb4c63b2a440c8304 *man/zz_internal.Rd
 1a56e6ab6bcb33eb674ffe20958a33ba *src/Makevars.win
 397b7db752baac25b99fe520424c44da *src/my_c_apecm.c
 af1f907c7f08e7f6678b6758c54e81e1 *src/my_c_em.c
-c8bb95b7d0825243cabefb572dcaad99 *src/spatial.c
+6c5cbc4f8da3f3c05eb8caeae92402fe *src/spatial.c
 47177a339725a911a86ef27774ea9140 *src/zzz.c
 a11cac0c29c988e422bc9cf4e0b3194f *vignettes/MixfMRI-guide.Rnw
 6e3ca1e66839ff78adb64b3c76cbbfb7 *vignettes/MixfMRI-include/00-preamble.tex
